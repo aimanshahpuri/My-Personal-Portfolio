@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-	--main-background: #0b0c0f;
+	--main-background: #080708;
 	--main-fonts-color: #fff;
 	--main-decor-color:#00a9e2;
     --main-header-background:#21252e;
@@ -50,9 +50,10 @@ header:hover{
 
 .logo img{
 	padding-top: 5px;
-	height: 70px;
+	height: 80px;
 	cursor: pointer;
 }
+
 
 .nav-bar{
 	list-style:none;
@@ -125,9 +126,10 @@ h3{
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
-	font-size: 60px;
+	font-size: 50px;
 	color: var(--main-fonts-color);
-	text-shadow: 0px 0px 40px var(--main-decor-color);
+	text-shadow: 0px 0px 20px var(--main-decor-color);
+	cursor: pointer;
 }
 
 
@@ -228,6 +230,7 @@ h3{
 
 .card:hover{
 	box-shadow: 0 0 1.5rem rgb(194, 165, 165);
+	transform: scale(1.1);
 }
 
 #My-Skills{
@@ -248,10 +251,29 @@ h3{
 	font-size: 1.3rem;
 	padding: 10px;
 }
-#My-Skills ol li{
+#My-Skills ul li{
 	font-size: 1.3rem;
 }
 
+#Social-links{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+
+#Social-links h3{
+	padding-top: 70px;
+}
+#Social-links p{
+	font-family: var(--main-font-family);
+	font-size:1.3rem;
+	padding: 10px;
+}
 
 
 
@@ -314,7 +336,7 @@ hr {
 	height: 3px;
 	width: 150px;
     border-radius:5px;
-	border: hidden;
+	border: lightskyblue;
 	margin-inline-start: auto;
     margin-inline-end: auto;
 }
@@ -360,6 +382,10 @@ hr {
 }
 
 .toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.toggle .line4{
 	transform: rotate(45deg) translate(-5px,-6px);
 }
 
@@ -435,5 +461,5 @@ hr {
 }
 
 .nav-active{
-	transform:translatex(0%);
+	transform: translatex(0%);
 }
