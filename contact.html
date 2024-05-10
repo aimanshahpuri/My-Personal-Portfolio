@@ -2,21 +2,56 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Contact Section</title>
+<title>Contact page</title>
 </head>
+<style>
+    h1 {
+        color: azure;
+        text-align: center;
+        font-size: 40px;
+    }
+    body{
+        background-image: url('images/cont.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    ul li strong{
+        color: azure;
+        font-size: 20px;
+    }
+    a{
+        color: azure;
+        font-size: 1.2rem;
+    }
+    label {
+        color: white;
+        font-size: 1.5rem;
+    }
+    form{
+        text-align: center;
+        padding: 60px;
+    }
+    button{
+        color: black;
+        font-size: 1.3rem;
+    }
+    button:hover{
+        box-shadow: 0 0 2rem rgb(219, 222, 223);
+	    transform: scale(1.1);
+    }
+</style>
 <body>
-    
-    
-<h1> <strong>My Contact Details</strong></h1>
+<h1> <strong> Contact Me </strong></h1>
 <ul>
-<li> <strong> gmail</strong>: <a href="https://mail.google.com/mail/u/0/?zx=rs4xpodzqzw#inbox?compose=DmwnWrRmTWglbkqPMtvRvwqGmCHVXQrvnnlhfHZGZZbZgPngnZJXtlhlWmPqMHPLmHrtWjXGKmMl">aimanshahpuri31@gmail.com</a></li>
-<li> <strong> Contact Number</strong>: +91-7338392748</li>
+<li> <strong> Email : </strong><a href="https://mail.google.com/mail/u/0/?zx=rs4xpodzqzw#inbox?compose=DmwnWrRmTWglbkqPMtvRvwqGmCHVXQrvnnlhfHZGZZbZgPngnZJXtlhlWmPqMHPLmHrtWjXGKmMl">aimanshahpuri31@gmail.com</a></li>
+<li> <strong> Contact Number : +91-7338392748</strong></li>
 </ul>
 <hr>
+
 <form action="mailto:aimanshahpuri31@gmail.com" method="post" enctype="text/plain">
 <label>First Name :</label>
 <input type="text" name="yourFirstName" value="">
-<label>last Name :</label>
+<label>Last Name :</label>
 <input type="text" name="yourLastName">
 <br>
 <label>Contact Number :</label>
@@ -29,11 +64,7 @@
 <br>
 <textarea rows="10" cols="30"></textarea>
 <br>
-<input type="submit" name="">
-
-
-
-
+<button onclick="" type="submit">Submit</button>
 
 </form>
 </body>
